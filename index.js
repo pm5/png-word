@@ -39,7 +39,7 @@ inherits(PNGWord,EventEmitter);
 
 PNGWord.prototype.createReadStream = function(txtword){
 
-	var arr = txt2arr(txtword)
+	var arr = txtword.split("")
 	,png = new PNG({width:this.conf.charWidth*txtword.length,height:this.conf.charHeight}); 
 
 	arr.forEach(function(char_,index){
@@ -67,12 +67,4 @@ PNGWord.prototype.createReadStream = function(txtword){
 
 	return png.pack();
 
-}
-
-function txt2arr(txt){
-	var arr = [];		
-	for(var i=0,len=txt.length;i<len;i++){
-		arr[i] = txt.charAt(i);
-	}
-	return arr;
 }
