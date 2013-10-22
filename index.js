@@ -68,3 +68,16 @@ PNGWord.prototype.createReadStream = function(txtword){
 	return png.pack();
 
 }
+
+PNGWord.prototype.readPng = function(txt,cb){
+	var rs = this.createReadStream(txt);
+	var bufs = [];
+	var png = null;
+	rs.on("data",function(chunk){
+		bufs.push(chunk);	
+	});
+	rs.on("end",function(){
+		png = Buffer.concat(bufs);
+		cb(png);
+	});
+}
