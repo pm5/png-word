@@ -11,7 +11,7 @@ install
 example
 =======
 ```js
-var PW = require("node-png"),fs = require("fs");
+var PW = require("png-word"),fs = require("fs");
 
 var pngword = new PW(); // use defalt config
 
