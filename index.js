@@ -69,7 +69,7 @@ PNGWord.prototype.createReadStream = function(txtword){
 
 }
 
-PNGWord.prototype.readPng = function(txt,cb){
+PNGWord.prototype.createPNG = function(txt,cb){
 	var rs = this.createReadStream(txt);
 	var bufs = [];
 	var png = null;
