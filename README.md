@@ -41,6 +41,30 @@ var pngword = PW();
 + `txt` is a string.
 + `callback` (png) , png is buffer.
 
+Expand
+======
+
+`var pw = new PW(conf);` 
+
+`conf` custom self configure, it is a json. 
+
+###### example
+```js
+{
+  pngPath: // png image path.
+
+	charWidth:  // is Number, a char width.
+	charHeight:
+
+	repo:{  // a char position 
+	   "X":0,
+		 "C":1
+	}
+
+}
+
+```
+
 LICENSE
 ========
 
