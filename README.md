@@ -41,7 +41,7 @@ var pngword = PW();
 + `txt` is a string.
 + `callback` (png) , png is buffer.
 
-LICSENCE
+LICENSE
 ========
 
 MIT , brighthas <brighthas@gmail.com>
