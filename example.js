@@ -1,9 +1,10 @@
 var PW = require("./"),fs = require("fs");
 
-var pngword = new PW();
+//var pngword = new PW();
+var pngword = PW();
 
 pngword.on("parsed",function(){
-	this.readPng("221",function(data){
+	this.createPNG("221",function(data){
 		fs.writeFileSync("pngword.png",data);
 	});
 });

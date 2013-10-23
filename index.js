@@ -8,6 +8,10 @@ module.exports = PNGWord;
 		
 function PNGWord(conf){
 
+	if(!(this instanceof PNGWord)){
+		return new PNGWord(conf);		
+	}
+
 	EventEmitter.call(this);
 	this.parsed = false;
 
