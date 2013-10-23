@@ -57,8 +57,8 @@ Expand
 	charHeight:
 
 	repo:{  // a char position 
-	   "X":0,
-		 "C":1
+		"X":0,
+		"C":1
 	}
 
 }
