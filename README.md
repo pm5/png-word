@@ -68,7 +68,7 @@ Expand
 Demo
 ====
 
-see: https://github.com/brighthas/validat-num-demo
+https://github.com/brighthas/validat-num-demo
 
 LICENSE
 ========
