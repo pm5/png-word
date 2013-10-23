@@ -19,6 +19,27 @@ pngword.on("parsed",function(){
 	this.createReadStream("1113221").pipe(fs.createWriteStream("pngword.png"))
 });
 ```
+API
+===
+
+##### #new
+```js
+var PW = require("png-word");
+var pngword = new PW(); 
+```
+or
+```js
+var pngword = PW();
+```
+
+##### #createReadStream(txt) 
+
++ `txt` is a string , return a ReadStream object .
+
+##### #createPNG(txt,callback) 
+
++ `txt` is a string.
++ `callback` (png) , png is buffer.
 
 LICSENCE
 ========
