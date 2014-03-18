@@ -44,18 +44,7 @@ function PNGWord(conf){
 	pngPath:__dirname+"/nums.png",
 	charWidth:20,
 	charHeight:20,
-	repo:{
-		"0":0,
-		"1":1,
-		"2":2,
-		"3":3,
-		"4":4,
-		"5":5,
-		"6":6,
-		"7":7,
-		"8":8,
-		"9":9
-	},
+	repo:"0123456789",
 	prefix:"",
 	suffix:""
 	}
@@ -79,7 +68,7 @@ PNGWord.prototype.createReadStream = function(txtword){
 
 	arr.forEach(function(char_,index){
 
-		var charPosition = this.conf.repo[char_]
+		var charPosition = this.conf.repo.indexOf(char_)
 
 		// png picture how many characters a line.
 		,hsize = this.png.width/this.conf.charWidth

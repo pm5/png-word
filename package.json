@@ -1,6 +1,6 @@
 {
   "name": "png-word",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "png word",
   "main": "index.js",
   "dependencies": {
@@ -22,5 +22,6 @@
   "keywords": [
     "png",
     "word"
-  ]
+  ],
+  "homepage": "https://github.com/brighthas/png-word"
 }
