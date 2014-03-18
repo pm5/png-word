@@ -49,7 +49,7 @@ Expand
 `conf` custom self configure, it is a json. 
 
 ###### example
-```js
+```
 {
   pngPath: // png image path.
 
@@ -62,8 +62,17 @@ Expand
 	}
 
 }
-
 ```
+Full Text
+=========
+There are three initial templates ready with full text support:
+`.GREEN`, `.RED`, and `.GRAY`.
+
+```js
+var PW = require("png-word");
+var pngword = new PW(PW.GREEN); 
+```
+
 
 Demo
 ====
