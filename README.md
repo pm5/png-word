@@ -56,10 +56,7 @@ Expand
 	charWidth:  // is Number, a char width.
 	charHeight:
 
-	repo:{  // a char position 
-		"X":0,
-		"C":1
-	}
+	repo:"0123456789" // chars
 
 }
 ```
