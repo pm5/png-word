@@ -19,24 +19,36 @@ pngword.on("parsed",function(){
 	this.createReadStream("1113221").pipe(fs.createWriteStream("pngword.png"))
 });
 ```
+
+```js
+var PW = require("png-word"),
+    fs = require("fs");
+var pngword = new PW(PW.GREEN);
+pngword.on("parsed", function () {
+  pngword.createPNG("hello, world!", function (png) {
+    fs.writeFileSync("pngword.png", png);
+  });
+});
+```
+
 API
 ===
 
 ##### #new
 ```js
 var PW = require("png-word");
-var pngword = new PW(); 
+var pngword = new PW();
 ```
 or
 ```js
 var pngword = PW();
 ```
 
-##### #createReadStream(txt) 
+##### #createReadStream(txt)
 
 + `txt` is a string , return a ReadStream object .
 
-##### #createPNG(txt,callback) 
+##### #createPNG(txt,callback)
 
 + `txt` is a string.
 + `callback` (png) , png is buffer.
@@ -44,9 +56,9 @@ var pngword = PW();
 Expand
 ======
 
-`var pw = new PW(conf);` 
+`var pw = new PW(conf);`
 
-`conf` custom self configure, it is a json. 
+`conf` custom self configure, it is a json.
 
 ###### example
 ```
@@ -67,7 +79,7 @@ There are three initial templates ready with full text support:
 
 ```js
 var PW = require("png-word");
-var pngword = new PW(PW.GREEN); 
+var pngword = new PW(PW.GREEN);
 ```
 
 
